@@ -1,61 +1,65 @@
 <!DOCTYPE html>
-<!-- <html lang="ar" dir="rtl"> -->
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>موقع التعداد</title>
 
-    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css"> -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
 </head>
 
 <body>
     <div class="container my-5">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <h1 class="text-center mb-4">Family Name</h1>
+                <h1 class="text-center mb-4">
+                    عائلة:
+                    <span>اسم مسؤول العائلة</span>
+                </h1>
                 <div class="d-flex justify-content-between mb-3">
-                    <a class="btn btn-outline-primary" href="dashboard.html">Back</a>
+                    <a class="btn btn-outline-primary" href="dashboard.html">الرجوع</a>
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Delete
+                        حذف
                     </button>
                 </div>
                 <!-- Family Head Section -->
                 <div class="card mb-4">
                     <div class="card-header fw-bold">
-                        <h4>Head of Family</h4>
+                        <h4>معلومات مسؤول الأسرة</h4>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Name: John Doe</p>
-                        <p class="card-text">Email: johndoe@example.com</p>
-                        <p class="card-text">Phone Number: (555) 123-4567</p>
-                        <p class="card-text">Age: 30</p>
-                        <p class="card-text">Gender: Male</p>
+                        <p class="card-text">الأسم الثلاثي مع اللقب: الاسم</p>
+                        <p class="card-text">تاريخ الميلاد: 3/3/3</p>
+                        <p class="card-text">رقم الهاتف: 7837548399</p>
+                        <p class="card-text">التحصيل الدراسي: يابتين</p>
+                        <p class="card-text">الجنس: ذكر</p>
                     </div>
                 </div>
 
                 <!-- Family Members Section -->
                 <div class="card mb-4">
                     <div class="card-header fw-bold">
-                        <h4>Family Members</h4>
+                        <h4>بقية أفراد الأسرة</h4>
                     </div>
                     <div class="card-body">
                         <!-- Family Member 1 -->
                         <div class="mb-3">
-                            <h5>Family Member 1</h5>
-                            <p>Name: Jane Doe</p>
-                            <p>Age: 25</p>
-                            <p>Gender: Female</p>
+                            <h5>الفرد الأول</h5>
+                            <p>الأسم الثلاثي مع اللقب: تيبتيم</p>
+                            <p>تاريخ الميلاد: 3/3/3</p>
+                            <p>التحصيل الدراسي: بابتانسي</p>
+                            <p>موقعه من الأسرة: اخ</p>
+                            <p>الجنس: ذكر</p>
                         </div>
 
-                        <!-- Family Member 2 -->
                         <div class="mb-3">
-                            <h5>Family Member 2</h5>
-                            <p>Name: Tom Doe</p>
-                            <p>Age: 10</p>
-                            <p>Gender: Male</p>
+                            <h5>الفرد الاثاني</h5>
+                            <p>الأسم الثلاثي مع اللقب: تيبتيم</p>
+                            <p>تاريخ الميلاد: 3/3/3</p>
+                            <p>التحصيل الدراسي: بابتانسي</p>
+                            <p>موقعه من الأسرة: اخ</p>
+                            <p>الجنس: ذكر</p>
                         </div>
                     </div>
                 </div>
@@ -68,29 +72,26 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Are you sure?</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">هل أنت متأكد؟</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Are you sure you want to delete this family with all of its members
+                    هل أنت متأكد أنك تريد حذف هذه العائلة بكل أفرادها؟
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">تراجع</button>
+                    <button type="button" class="btn btn-danger">حذف</button>
                 </div>
             </div>
         </div>
     </div>
 
     <footer class="bg-dark text-light text-center p-3 fixed-bottom mt-5">
-        &copy; 2023 Made by <a class="text-info" target="_blank"
+        &copy; 2023 تم تطوير هذا الموقع بواسطة <a class="text-info" target="_blank"
             href="https://www.instagram.com/soft_4_you_dev/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">Soft
-            4 You</a>, All rights reserved.
+            4 You</a>, كل الحقوق محفوظة.
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
